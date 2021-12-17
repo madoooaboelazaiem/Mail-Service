@@ -1,0 +1,70 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:security/recommended"
+  ],
+  "globals": {
+    "process": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-hooks", "security", "prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "camelcase": "error",
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false
+      }
+    ],
+    "no-var": ["error"],
+    "no-unused-vars": ["warn"],
+    "linebreak-style": ["error", "unix"],
+    "indent": [0],
+    "quotes": ["error", "single"],
+    "no-empty-function": "error",
+    "no-unsafe-finally": "off",
+    "brace-style": ["error", "1tbs"],
+    "semi": ["error", "always"],
+    "curly": ["error", "all"],
+    "prefer-arrow-callback": "error",
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "space-in-parens": ["error", "never"],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
+    "computed-property-spacing": ["error", "never"],
+    "array-bracket-spacing": ["error", "never", { "singleValue": false }],
+    "comma-spacing": ["error", { "after": true }],
+    "arrow-spacing": ["error", { "before": true, "after": true }],
+    "func-call-spacing": ["error", "never"],
+    "key-spacing": ["error", { "afterColon": true }],
+    "keyword-spacing": ["error", { "before": true, "after": true }],
+    "no-trailing-spaces": ["error", { "skipBlankLines": true }],
+    "react/prop-types": [0],
+    "react/display-name": [0],
+    "react/jsx-curly-spacing": ["error", "never"],
+    "react/jsx-curly-brace-presence": ["error", { "props": "always", "children": "always" }],
+    "react-hooks/exhaustive-deps": [0],
+    "security/detect-object-injection": [0],
+    "jsx-quotes": ["error", "prefer-single"]
+  }
+}
