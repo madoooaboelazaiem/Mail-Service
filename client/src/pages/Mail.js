@@ -61,6 +61,8 @@ const Mail = () => {
         .post(`${Config.baseUrl}/contact`, { emails: emails, message: message })
         .then(res => {
           if (res.status === 200) {
+            setEmails([]);
+            setMessage('');
             toast.success('Message Sent Successfully');
           } else {
             toast.error(
