@@ -1,0 +1,12 @@
+yarn-debug.log*
+yarn-error.log*
+
+**/node_modules
+
+__coverage__
+
+*bundle.js*
+
+.env
+
+might.error.*.png
